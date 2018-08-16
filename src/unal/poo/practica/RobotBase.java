@@ -19,42 +19,95 @@ public class RobotBase
             
             //Direction.NORTH, EAST, SOUTH, WEST
             //Definicion de la ubicacion del robot, Ciudad, posicion, Direccion, Numero things en el bolso.
-            estudiante = new Robot(objetos,0, 2, Direction.EAST,10);
-            
-	    //Mover una interseccion en el sentido al cual este apuntando el objeto.
-            estudiante.move ();
-            
-            //Girar a la izquierda
-            estudiante.turnLeft();
-            
-            //Tomando decisiones, Si puedo tomar un Thing
-            boolean puedeTomar = estudiante.canPickThing();
-            
-            //Tomar un Thing
-            if(puedeTomar == true)
-               estudiante.pickThing();
-            
-            //Especifica el numero de Thing que tiene en robot en el bolso
-            int numeroThings = estudiante.countThingsInBackpack();
-            
-            //Poner Thing, se debe validar que tenga things en el bolso
-            estudiante.putThing();
-                       
-            //Si el frente esta libre de Wall
-            estudiante.frontIsClear();
-            
-            //Invocando una funcion
-            creacionFuncion(4);
-            
-            //Toman un Thing
-            estudiante.pickThing();
-            
-            
+            estudiante = new Robot(objetos,1, 0, Direction.EAST,10);
+            int i=1;
+            while(i<6){
+                estudiante.move();
+                i=i+1;
+                
+            }
+	   estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           int j=1;
+           while(j<6){
+                estudiante.move();
+                j=j+1;
+            }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+            int k=1;
+            while(k<5){
+                estudiante.move();
+                k=k+1;
+            }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int l=1;
+           while(l<5){
+               estudiante.move();
+               l=l+1;
+           }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int m=1;
+            while(m<4){
+               estudiante.move();
+               m=m+1;
+           }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int n=1;
+            while(n<4){
+               estudiante.move();
+               n=n+1;
+           }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int o=1;
+            while(o<3){
+               estudiante.move();
+               o=o+1;
+           }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int p=1;
+            while(p<3){
+               estudiante.move();
+               p=p+1;
+           }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int q=1;
+            while(q<2){
+               estudiante.move();
+               q=q+1;
+           }
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           estudiante.turnLeft();
+           
+           int r=1;
+            while(r<2){
+               estudiante.move();
+               r=r+1;
+           }
+           
 	}
         
-        public static void creacionFuncion(int parametroEntrada){
-            for (int i = 0; i < parametroEntrada; i++) 
-                estudiante.move();
-        }
+       
 }
 
